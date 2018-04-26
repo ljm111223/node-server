@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float2</title>
+    <style>
+        nav{
+            width: 600px;
+            margin: 30px auto 0px;
+            box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.3);
+            color: #333;
+        }
+        .manu1::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .manu1{
+            padding-left: 20px;
+            background-color: #f1f1f1;
+        }
+        a{
+            margin: 0px;
+            color: #333;
+            text-decoration: none;
+            padding: 7px;
+            display: block;
+            min-width: 50px;
+            text-align: center;
+        }
+        a:hover{
+            background-color: rgba(0,0,0,0.5);
+        }
+        li{
+            list-style: none;
+        }
+        .manu1>li{
+            float: left;
+
+        }
+        .manu2{
+            position: absolute;
+            margin: 0px;
+            padding: 2px 0px;
+            box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.3);
+            display: none;
+        }
+        nav>ul>li:hover .manu2{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<nav>
+    <ul class="manu1">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">作品</a></li>
+        <li><a href="#" >更多</a>
+            <ul class="manu2">
+                <li><a href="#">Github</a></li>
+                <li><a href="#">博客</a></li>
+                <li><a href="#">知乎</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+</body>
+</html>

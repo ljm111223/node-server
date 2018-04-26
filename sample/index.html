@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_604191_rh9df7lncee1att9.css">
+    <style>
+
+        html,body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        {
+            position: relative;
+            min-width: 600px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background: #000 url("http://pic.3h3.com/up/2017-1/2017121152646320420.jpg") center center no-repeat;
+            background-size: cover ;
+        }
+
+        nav{
+            padding: 10px 60px 0 10px;
+            overflow: hidden;
+        }
+        nav li{
+            float: right;
+        }
+        header .logo{
+            float: left;
+            color: white;
+            font: 40px Lucida Console;
+        }
+
+        header nav li>a{
+            font: 24px Lucida Console;
+            color:#333;
+            border-radius: 4px;
+            padding:5px 15px;
+        }
+        header nav li>a:hover{
+            background: #f7ba3e;
+            color: white;
+        }
+        header .header-intro{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .header-intro h1{
+            margin: 0 auto;
+            font-size: 40px;
+            color: white;
+            background: red;
+            border-radius: 25px;
+            width: 400px;
+        }
+        .header-intro h2{
+            font-size: 44px;
+            margin-top:10px ;
+            color: #2ca5b9;
+        }
+        .specials .iconfont{
+            display: inline-block;
+            background: #f7ba3e;
+            width: 80px;
+            height: 80px;
+            color: white;
+            padding: 5px;
+            font-size: 50px;
+            border-radius: 50%;
+        }
+        .specials{
+            min-width: 600px;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+        .specials li{
+            float: left;
+            width:400px;
+            padding-right: 50px;
+            text-align: center;
+
+        }
+        .specials h1{
+            font-size: 50px;
+            margin-top: 150px;
+            margin-bottom: 0;
+        }
+        .specials>span{
+            color: #656565;
+            width:300px;
+        }
+        .specials ul{
+            margin-top: 100px;
+            margin-bottom: 100px;
+            overflow: hidden;
+
+        }
+        .timeline{
+            width:900px;
+            margin:0 auto;
+            text-align: center;
+        }
+        .games h1{
+            font-size: 50px;
+            margin-top: 150px;
+            margin-bottom: 100px;
+        }
+        .games img{
+            position: relative;
+            width: 400px;
+            height: 250px;
+        }
+        .games h3{
+            margin: 0;
+            font-size: 30px;
+        }
+        .games ul{
+            overflow: hidden;
+        }
+
+        .games li{
+            position: relative;
+            width: 400px;
+            float: left;
+            padding: 15px 30px;
+        }
+        .games img::after{
+            content:"";
+            display: block;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background:  rgba(255,255,255,0.3);
+        }
+        .timeline h1,.stars h1,.contact h1{
+
+            font-size: 50px;
+            margin-top: 150px;
+            margin-bottom: 150px;
+        }
+        .timeline li:nth-child(odd){
+            margin-top: 80px;
+            padding-right: calc(50% - 53px);
+            text-align: right;
+        }
+        .timeline li{
+            position: relative;
+        }
+        .timeline img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid lightblue;
+    }
+        dd{
+            margin: 0;
+        }
+        .timeline li:nth-child(even) img{
+            float: left;
+        }
+        .timeline li:nth-child(odd) img{
+            float: right;
+        }
+        .timeline li::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .timeline li:nth-child(odd) dl{
+            margin-left: 0;
+            margin-right: 120px;
+        }
+        .timeline li:nth-child(even){
+
+            padding-left: calc(50% - 50px);
+            text-align: left;
+        }
+        .timeline li:nth-child(even) dl{
+            margin-top: 80px;
+            margin-right: 0;
+             margin-left: 120px;
+         }
+        .timeline dt{
+            font:bold 20px Arial ;
+        }
+        .timeline li::before{
+            position: absolute;
+            content: "";
+            display: inline-block;
+            height:130px;
+            width: 4px;
+            background-color: lightblue;
+            top: 105px;
+            left: 50%;
+            margin-left: -2px;
+        }
+        .timeline li:last-child::before{
+            position: absolute;
+            content: "";
+            display: inline-block;
+            height: 0;
+        }
+        .stars img{
+            width: 200px;
+            height: 200px;
+        }
+        .stars li{
+            float: left;
+            width:400px;
+            padding-right: 50px;
+
+            text-align: center;
+
+        }
+        .stars h3{
+            margin-bottom: 5px;
+        }
+        .stars a,.myinfo a{
+            display: inline-block;
+            font-size: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: #444444;
+        }
+        .stars a:hover,.myinfo a:hover{
+            color: #f7ba3e;
+        }
+
+        .stars ul{
+            margin-bottom: 300px;
+        }
+
+        .contact {
+            min-width: 500px;
+            width: 100%;
+            height: 100%;
+            background: #656565 url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522763543150&di=a30780f2fef3bf2605a3b6566ebeb713&imgtype=0&src=http%3A%2F%2Fdl.bizhi.sogou.com%2Fimages%2F2012%2F02%2F07%2F145424.jpg");
+        }
+
+        .contact h1{
+            padding-top: 100px;
+            color: white;
+        }
+
+        .contact .user input{
+            display: block;
+            width: 400px;
+            height: 40px;
+            margin-bottom: 45px;
+        }
+        .input{
+            width: 900px;
+            margin:0 auto 250px;
+            text-align: center;
+
+        }
+        .user, .myinfo .left{
+            float: left;
+        }
+        #mes,.myinfo .right{
+            float: right;
+        }
+        .myinfo{
+            margin: 0 auto;
+            height: 100px;
+            width: 900px;
+            text-align: center;
+        }
+        .myinfo span,.myinfo a{
+            padding-top:40px ;
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="clearfix layout">
+        <a href="#" class="logo">Nintendo</a>
+        <ul class="clearfix">
+            <li><a href="#">Specials</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Timeline</a></li>
+            <li><a href="#">Stars</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-intro">
+        <h1>Nintendo Switch</h1>
+        <h2>Play anytime,anywhere,with anyone</h2>
+        <a href="#" class="btn">Tell me more</a>
+    </div>
+</header>
+<main>
+    <section class="specials">
+
+        <h1>Specials</h1>
+        <span>这是前社长岩田聪最后一部参与开发的硬件产品，该产品将成为未来任天堂娱乐事业蓝图的中心。</span>
+        <ul class="layout">
+            <li >
+                <span class="iconfont icon-jindu"></span>
+                <h3>家用机&掌机</h3>
+                <span>“Switch”的英文字面解释为开关和切换，显然后者更应该是任天堂这台全新主机所想要诠释的定义。 其最大的特征就是同时具备携带和家用两种特性，同时又针对手柄控制器进行模块化设计的全新形态游戏主机。</span>
+            </li>
+            <li>
+                <span class="iconfont icon-liulanqi"></span>
+                <h3>HD震动</h3>
+                <span> 任天堂是第一个在游戏机手柄中加入震动功能的厂商，早在1997年他们曾为N64推出过手柄震动包配件，以及对应震动功能的《超级马里奥64》。而这次Switch引入的HD震动则会再次改变游戏手柄。</span>
+            </li>
+            <li>
+                <span class="iconfont icon-shouye1"></span>
+                <h3>体感游戏</h3>
+                <span>NS的Joy-Con手柄有相当于Wii但增强效果的体感游戏功能。任天堂之所以不再宣传这一点，是因为任天堂认为和NS的核心创意相比，体感只是一个标配，和触摸游戏一样成了理所当然的事。</span>
+            </li>
+        </ul>
+    
+    </section>
+    <section class="games layout">
+        <h1>Games</h1>
+
+        <ul class="">
+            <li>
+                <a href="#"><img src="http://s9.rr.itc.cn/r/wapChange/20171_13_19/a0vjxj6033294717619.jpg" alt=""></a>
+                <h3>Arms</h3>
+            </li>
+            <li>
+                <a href="#"><img src="http://s9.rr.itc.cn/r/wapChange/20171_13_19/a4ypd46033436311619.jpg" alt=""></a>
+                <h3>MarioKart8 Deluxe</h3>
+            </li>
+            <li>
+                <a href="#"><img src="http://s9.rr.itc.cn/r/wapChange/20171_13_19/a5xtwv6033311693619.jpg" alt=""></a>
+                <h3>Splatoon2</h3>
+            </li>
+            <li>
+                <a href="#"><img src="http://s9.rr.itc.cn/r/wapChange/20171_13_19/a4z69r6033135300619.jpg" alt=""></a>
+                <h3>The Legend of Zelda</h3>
+            </li>
+            <li>
+                <a href="#"><img src="http://s9.rr.itc.cn/r/wapChange/20171_13_19/a3n5nq6033376535619.jpg" alt=""></a>
+                <h3>SuperMario:Odyssey</h3>
+            </li>
+            <li>
+                <a href="#"><img src="http://s9.rr.itc.cn/r/wapChange/20171_13_19/a2vmz06033548306619.jpg" alt=""></a>
+                <h3>Xenoblade2</h3>
+            </li>
+        </ul>
+    </section>
+    <section class="timeline layout">
+        <h1>Timeline</h1>
+            <ul>
+                <li>
+                    <img src="https://s1.ax1x.com/2018/04/03/CpeJIS.png" alt="">
+                    <dl>
+                        <dt>开发阶段</dt>
+                        <dd>2013年，前社长岩田聪、竹田玄洋（技术主管）和宫本茂（创意主管）制定了一套复兴任天堂商业的计划。2015年03月17日，任天堂宣布将会推出代号NX的游戏专用机，详细计划2016年正式公布。</dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="https://s1.ax1x.com/2018/04/03/Cpuze1.png" alt="">
+                    <dl>
+                        <dt>正式公布</dt>
+                        <dd>2016年10月20日，该社发表了次世代主机“NINTENDO Switch（简称NS）”。 醒目的LOGO标记和Joy-Con手柄组装时的咔嗒、咔嗒声，效果足以超越任天堂硬件广告史上最为人称道的GBA-SP和Wii两次处女秀。</dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="https://s1.ax1x.com/2018/04/03/CpKiWD.png" alt="">
+                    <dl>
+                        <dt>全球上市</dt>
+                        <dd>NintendoSwitch在全球正式发售，随即在各地出现了售罄状况。NintendoSwitch主机前2日销量突破了任天堂史上最成功主机Wii在美国创造的销售纪录。有多达89%的NS买家选购了首发护航的《塞尔达传说：荒野之息》，游戏一周销售额已高达1.34亿美元。</dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="https://s1.ax1x.com/2018/04/03/CpKSdx.png" alt="">
+                    <dl>
+                        <dt>主机销量</dt>
+                        <dd>截止2017年7月22日，任天堂游戏主机“NS”在全世界销量已超500万台。从销售区域上看，欧洲1,398,764台（27%） 、日本1,200,307台（23%）、美国1,740,629 台（34%），德国销量303,712台。NS全球销量在12月10日超过了1000万台。这款发售于2017年3月3日的主机，仅用9个月就达成上千万销量。</dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="https://s1.ax1x.com/2018/04/03/CpKPJO.png" alt="">
+                    <dl>
+                        <dt>中文化</dt>
+                        <dd>中文化游戏不乏文本量大的游戏。截至17.10的NS游戏中，超60款游戏支持中文，《异度神剑2》、《塞尔达 传说：旷野之息》、《上古卷轴5：天际NS版》等游戏都是文本量极大的作品，虽然有的没中文，但以后能通过补丁更新，甚至同步首发中文版。</dd>
+                    </dl>
+                </li>
+            </ul>
+    </section>
+    <section class="stars layout">
+        <h1>Stars</h1>
+        <ul class="clearfix">
+            <li>
+                <img src="https://s1.ax1x.com/2018/04/03/CpM55V.png" alt="">
+                <h3>马里奥</h3>
+                <a href="#" class="iconfont icon-weibo"></a> <a href="#" class="iconfont icon-weixin"></a><a href="#" class="iconfont icon-iconset0360"></a>
+            </li>
+            <li>
+                <img src="https://s1.ax1x.com/2018/04/03/CpM4U0.png" alt="">
+                <h3>塞尔达</h3>
+                <a href="#" class="iconfont icon-weibo"></a> <a href="#" class="iconfont icon-weixin"></a><a href="#" class="iconfont icon-iconset0360"></a>
+            </li>
+            <li>
+                <img src="https://s1.ax1x.com/2018/04/03/CpMhEq.png" alt="">
+                <h3>宝可梦</h3>
+                <a href="#" class="iconfont icon-weibo"></a> <a href="#" class="iconfont icon-weixin"></a><a href="#" class="iconfont icon-iconset0360"></a>
+            </li>
+        </ul>
+        
+    </section>
+</main>
+<footer>
+    <section class="contact layout">
+        <h1>Contact Us</h1>
+        <div class="input clearfix">
+            <div class="user">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+            </div>
+            <textarea name="mes" id="mes" cols="60" rows="15"></textarea>
+        </div>
+    </section>
+    <section class="myinfo">
+        <span class="left">Copyright © Your Website 2014</span>
+        <a href="#" class="iconfont icon-weibo"></a> <a href="#" class="iconfont icon-weixin"></a><a href="#" class="iconfont icon-iconset0360"></a>
+        <span class="right">Privacy Policy   Terms of Use</span>
+    </section>
+</footer>
+</body>
+</html>
